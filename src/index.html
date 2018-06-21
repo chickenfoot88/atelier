@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <meta http-equiv="X-UA-Compatible", content="IE=edge">
+    <meta name="description", content="">
+    <meta name="keywords", content="">
+    <meta name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="images/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="images/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="images/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="images/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="images/mstile-310x310.png" />
+
+
+    <!-- Favicon links goes here! -->
+
+    <!-- Chrome, Firefox OS and Opera -->
+  	<meta name="theme-color" content="#000">
+  	<!-- Windows Phone -->
+  	<meta name="msapplication-navbutton-color" content="#000">
+  	<!-- iOS Safari -->
+  	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <style type="text/css">
+
+    .preloader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background-color: #F5E0C4;
+      top: 0;
+      left: 0;
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      font-family: Engravers, sans-serif;
+    }
+
+    </style>
+
+    <!-- Yandex.Metrika counter --> <script src="https://mc.yandex.ru/metrika/tag.js" type="text/javascript"></script> <script type="text/javascript" > try { var yaCounter47626207 = new Ya.Metrika2({ id:47626207, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } </script> <noscript><div><img src="https://mc.yandex.ru/watch/47626207" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+  </head>
+
+  <body>
+
+    <div class="content">
+
+      <div class="preloader">Please, wait...</div>
+
+      <section class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 clearfix">
+              <a href="tel:+79376280971" class="phone pull-left"><i class="fa fa-phone"></i>8 937 628 09 71</a>
+            </div>
+            <div class="col-md-12">
+              <h1>Atelier</h1>
+              <h2 class="header-rotate vladimirs">D&eacute;butante</h2>
+              <h3>Collection</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="models">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#" data-toggle="modal" data-target="#model-modal" data-details="model_a" class="model"><img src="<%= require('./images/models/model_a.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_b"><img src="<%= require('./images/models/model_b.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_c"><img src="<%= require('./images/models/model_c.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_d"><img src="<%= require('.//images/models/model_d.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_e"><img src="<%= require('.//images/models/model_e.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_f"><img src="<%= require('./images/models/model_f.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_g"><img src="<%= require('./images/models/model_g.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_h"><img src="<%= require('./images/models/model_h.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-0 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_i"><img src="<%= require('./images/models/model_i.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-6 col-lg-offset-4 col-lg-4">
+
+              <div class="models-item">
+                <a href="#"  data-toggle="modal" data-target="#model-modal" data-details="model_j"><img src="<%= require('./images/models/model_j.jpg') %>" alt=""></a>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <section class="buttons">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
+              <button type="button" name="button" class="button" data-toggle="modal" data-target="#gallery-modal">Gallery</button>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <button type="button" name="button" class="button" data-toggle="modal" data-target="#contacts-modal">Contacts</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacts Modal -->
+      <div class="modal fade bd-example-modal-lg" id="contacts-modal" tabindex="-1" role="dialog" aria-labelledby="contact-form" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <h2 class="modal-title" id="exampleModalLabel">Contacts</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12 col-md-8 clearfix">
+                    <a href="tel:+79376280971" class="phone phone-contacts pull-left"><i class="fa fa-phone"></i>
+                      <span>8 937 628 09 71</span>
+                    </a>
+                  </div>
+                  <div class="col-sm-12 col-md-8">
+                    <p>If you want to buy our products or ask a question please feel free to e-mail us</p>
+                  </div>
+                </div>
+                <div class="contact-form">
+                  <form class="callback" id="contact-form">
+
+                    <div class="success">
+                      <p>Thank you!<br><br><span>Your message has been successfully sent. We will contact you very soon!</span></p>
+                    </div>
+
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Atelier">
+                    <input type="hidden" name="admin_email" value="abdullinbulatka@gmail.com">
+                    <input type="hidden" name="form_subject" value="Message from Atelier">
+                        <!-- END Hidden Required Fields -->
+
+                    <div class="row">
+                      <div class="col-md-8 col-sm-12">
+                        <div class="form-group">
+                          <label for="message">Message</label>
+                          <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <label for="name">Name</label>
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name">
+                            </div>
+                          </div>
+                          <div class="col-md-4 col-sm-6">
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="email" name="email" class="form-control" id="emai" aria-describedby="emailHelp" placeholder="Enter your email">
+                            </div>
+                          </div>
+                          <div class="col-md-4 clearfix">
+                            <button type="submit" class="contacts-submit-button pull-right">Submit<i class="fa fa-chevron-right"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <!-- Model Modal -->
+      <div class="modal fade bd-example-modal-lg" id="model-modal" tabindex="-1" role="dialog" aria-labelledby="model-detals" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="pages-navigation">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <i class="fa fa-chevron-left"></i>
+                        <span>Back</span>
+                      </button>
+                      <h2 class="modal-title"></h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="model-image"></div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="model-details"></div>
+                  </div>
+                  <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="material-image"></div>
+                    <button type="button" name="button" class="button-buy" data-target="#contacts-modal" data-dismiss="modal" data-toggle="modal">Buy</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <!-- Gallery Modal -->
+
+      <div class="modal fade gallery-modal" id="gallery-modal" tabindex="-1" role="dialog" aria-labelledby="model-detals" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header"></div>
+
+            <div class="modal-body">
+
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+
+              <div id="gallery" style="display:none;">
+
+                <img alt="Image 1 Title" src="<%= require('./images/gallery/thumbnails/gallery_1_thumbnail.jpg') %>"
+                  data-image="<%= require('./images/gallery/gallery_1.jpg') %>">
+
+                <img alt="Image 2 Title" src="<%= require('./images/gallery/thumbnails/gallery_2_thumbnail.jpg') %>"
+                  data-image="<%= require('./images/gallery/gallery_2.jpg') %>">
+
+                <img alt="Image 3 Title" src="<%= require('./images/gallery/thumbnails/gallery_3_thumbnail.jpg') %>"
+                  data-image="<%= require('./images/gallery/gallery_3.jpg') %>">
+
+                <img alt="Image 3 Title" src="<%= require('./images/gallery/thumbnails/gallery_4_thumbnail.jpg') %>"
+                  data-image="<%= require('./images/gallery/gallery_4.jpg') %>">
+
+                <img alt="Image 3 Title" src="<%= require('./images/gallery/thumbnails/gallery_7_thumbnail.jpg') %>"
+                  data-image="<%= require('./images/gallery/gallery_7.jpg') %>">
+
+                <img alt="Image 3 Title" src="<%= require('./images/gallery/thumbnails/gallery_5_thumbnail.jpg') %>"
+                  data-image="<%= require('./images/gallery/gallery_5.jpg') %>">
+
+                <img alt="Image 3 Title" src="<%= require('./images/gallery/thumbnails/gallery_6_thumbnail.jpg') %>"
+                  data-image="<%= require('./images/gallery/gallery_6.jpg') %>">
+
+                <img alt="Image 3 Title" src="<%= require('./images/gallery/thumbnails/gallery_8_thumbnail.jpg') %>"
+                  data-image="<%= require('./images/gallery/gallery_8.jpg') %>">
+
+              </div>
+            </div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
+
+      <div class="scroll-top-btn">
+        <i class="fa fa-chevron-up"></i>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,341 @@
+@import '_vars'
+@import '_fonts'
+
+.engravers
+  font-family: Engravers, sans-serif
+
+.vladimirs
+  font-family: VladimirScript, sans-serif
+
+html,
+body
+  width: 100%
+  height: 100%
+
+body
+  @extend .engravers
+  background: $main-yellow
+  font-size: 16px
+  min-width: 320px
+  line-height: 1
+  color: $text_main
+  text-align: center
+  position: relative
+  padding-right: 0 !important
+
+.body-hidden
+  overflow: hidden
+
+h1
+  text-transform: uppercase
+  font-size: 6.3em
+  color: #fff
+
+h2
+  color: $text_accent
+  font-size: 5.7em
+
+h3
+  font-size: 1.85em
+  text-transform: uppercase
+
+img
+  width: 100%
+  margin: auto
+
+.header-rotate
+  transform: rotate(-10deg)
+
+#contacts-modal
+  .modal-body,
+  .modal-header
+    padding: 0
+  .modal-dialog
+    margin: auto
+  p
+    text-align: left
+
+.phone
+  padding-top: 40px
+  display: block
+  font-family: HumanST, sans-serif
+  color: lighten($text_accent, 10%)
+  text-decoration: none
+  &-contacts
+    font-family: Engravers, sans-serif
+    font-size: 30px
+    color: $text_accent
+    padding-bottom: 40px
+    display: block
+    span
+      position: relative
+      &::after
+        content: ''
+        position: absolute
+        height: 1px
+        width: 100%
+        background-color: $text_accent
+        bottom: 4px
+        left: 0px
+    &:hover
+      color: $text_accent
+      text-decoration: none
+    &:focus
+      text-decoration: none
+      color: $text_accent
+    .fa
+      font-size: 22px
+.fa
+  margin-right: 10px
+
+.models
+  z-index: 2
+  position: relative
+  text-align: center
+  padding-top: 40px
+  padding-bottom: 20px
+  &-item
+    padding-bottom: 40px
+    a
+      display: block
+      position: relative
+      color: #fff
+      &::before
+        content: ''
+        position: absolute
+        background-color: #050505
+        opacity: 0
+        width: 100%
+        height: 100%
+        transition: opacity 0.5s ease
+      &::after
+        content: 'view'
+        position: absolute
+        left: 50%
+        top: 50%
+        font-size: 2.5em
+        margin-left: -25px
+        margin-top: -15px
+        opacity: 0
+        transition: opacity 0.2s ease
+    &:hover a::after
+      opacity: 1
+    &:hover a::before
+      opacity: 0.94
+
+button
+  outline: none
+
+.buttons
+  padding-bottom: 50px
+
+.button
+  outline: none
+  padding: 10px 40px
+  background-color: #fff
+  text-transform: uppercase
+  border: 3px solid #c7c7c7
+  font-size: 3.8em
+  transition: all 0.35s ease
+  &:hover
+    background-color: #333
+    color: #fff
+    border-color: #fff
+  &-buy
+    outline: none
+    background-color: #FFFFEA
+    border: 1px solid $text_accent
+    color: $text_accent
+    padding: 10px 30px
+    text-transform: uppercase
+    font-size: 1.9em
+    margin-top: 171px
+    box-shadow: inset 0 0 10px 2px #d3d3d3,0 0 6px 1px #a1a1a1
+    transition: all 0.3s ease
+    &:hover
+      background-color: darken(#FFFFEA, 7%)
+    &:active
+      transform: translate(0, 2px)
+
+
+.modal
+  padding-right: 0 !important
+  padding-left: 0 !important
+
+.modal-backdrop.in
+  opacity: 1
+  background-color: $main-yellow
+  height: 100%
+
+.modal-header
+  border: none
+  h2
+    text-transform: uppercase
+    color: $text_main
+    font-size: 3.5em
+    text-align: left
+
+.modal-content
+  border-radius: 0
+  box-shadow: none
+  background-color: transparent
+  border: none
+
+.modal-body
+  border: none
+  p
+    font-size: 1.8em
+  .close
+    font-size: 50px
+    position: absolute
+    right: 0
+    top: -70px
+    opacity: 1
+    color: lighten($text_main, 20%)
+    transition: color 0.3s ease
+    &:hover
+      color: $text_main
+
+.modal-footer
+  border: none
+
+.contact-form
+  padding-top: 40px
+  text-transform: uppercase
+  text-align: left
+  label
+    font-size: 1.2em
+  textarea
+    width: 100%
+    border-color: #d1d1d1
+    resize: vertical
+    min-height: 200px
+    padding: 10px
+    &::-webkit-input-placeholder
+      color: #a5a5a5
+  .form-control
+    border-radius: 0
+    font-family: sans-serif
+    box-shadow: none
+  .contacts-submit-button
+    background: none
+    border: none
+    font-size: 2em
+    text-transform: uppercase
+    margin-top: 24px
+    width: 150px
+    color: $text_main
+    transition: all 0.2s ease
+    &:hover
+      color: darken($text_main, 30%)
+    &:active
+      background-color: darken($main-yellow, 30%)
+      // color: #fff
+    .fa
+      font-size: 21px
+      margin-left: 10px
+
+.glyphicon
+  font-size: 21px
+  margin-left: 10px
+
+.pages-navigation
+  display: flex
+  align-items: center
+  justify-content: space-between
+  h2
+    font-size: 5em
+    line-height: 1em
+    margin-top: -10px
+  .close
+    transition: color 0.3s ease
+    &:hover
+      color: $text_main
+    span
+      display: block
+      float: right
+
+
+#model-modal
+  .modal-body
+    text-align: right
+
+.model-image
+  img
+    width: 100%
+
+.model-details
+  .model-parts
+    font-size: 2.5em
+
+.material-image
+  padding-top: 50px
+  img
+    border: 2px solid #6A6A6A
+    width: 135px
+
+.ug-textpanel-textwrapper
+  display: none !important
+
+.gallery-modal
+  .modal
+    padding: 0
+  .modal-dialog
+    padding: 0
+    width: 100%
+    max-width: 1070px
+    margin: auto
+    .modal-header
+      height: 100px
+    .modal-body
+      padding: 0
+
+.scroll-top-btn
+  display: none
+  position: fixed
+  width: 50px
+  height: 50px
+  border-radius: 26px
+  background-color: rgba(255,255,255, 0.5)
+  bottom: 20px
+  right: 20px
+  text-align: center
+  z-index: 1000
+  .fa
+    margin: 0
+    margin-top: 15px
+
+.callback
+  position: relative
+
+.success
+  align-items: center
+  background-color: #fff
+  bottom: 0
+  display: none
+  font-size: 0.7em
+  font-weight: bold
+  height: 100%
+  justify-content: center
+  left: 0
+  position: absolute
+  padding: 0 30px
+  right: 0
+  text-align: center
+  width: 100%
+  z-index: 10
+  span
+    color: $text_main
+    width: 100%
+    text-align: center
+    font-style: italic
+    font-weight: 100
+  & ~ *
+    transition: all .5s ease
+  &.active
+    & ~ *
+      opacity: .5
+      filter: blur(10px)
+
+
+@import '_media'
